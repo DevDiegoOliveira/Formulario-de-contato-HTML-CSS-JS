@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <title>Formulário de Contato</title>   
-        <link rel="stylesheet" href="styles.css">   
+        <title>Formulário de contato</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="container">
-            <h1>Fale conosco</h1>
-            <form id="form">
-                    <div>
-                        <div>
-                            <label for="name">Nome:</label>
-                            <input type="text" class="Input-text" id="name" name="name" required>
-                        </div>
-                        <div>
-                            <label for="email">Email:</label>
-                            <input type="email" class="Input-text" id="email" name="email" required>
-                        </div>
-                        <div>
-                            <label for="message">Message:</label>
-                            <input type="text" class="Input-text" id="message" name="message" required>
-                        </div>
-                        <button type="submit">Enviar</button>
-                    </div>
-
+        <section class="form-wrapper">
+            <h2 class="form-title">Formulário de Contato</h2>
+            <form id="contact-form">
+                <div class="form-input-group">
+                    <label for="name">Nome:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                </div>
+                <div class="form-input-group">
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                </div>
+                <div class="form-input-group">
+                    <label for="message">Mensagem:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+                </div>
+                <input type="submit" value="Enviar">
             </form>
-        </div>
+        </section>
         <script type="text/javascript" src="scripts.js"></script>
     </body>
 </html>
